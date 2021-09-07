@@ -9,10 +9,10 @@ public class Cell {
     private ArrayList<Cell> neighbors;
 
     public Cell(int strength, int id, int x, int y){
-        this.strength = strength;
-        this.x = x;
-        this.y = y;
-        this.id = id;
+        setStrength(strength);
+        setID(id);
+        setX(x);
+        setY(y);
     }
 
     public Cell(){
@@ -20,7 +20,7 @@ public class Cell {
     }
 
     public static void main(String[] args) {
-        Cell newCell = new Cell(-1,2,3,4);
+        Cell newCell = new Cell(-1,-1,-1,-1);
         newCell.setStrength(newCell.strength);
         newCell.setID(newCell.id);
         newCell.setX(newCell.x);
